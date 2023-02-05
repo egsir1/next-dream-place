@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import MeetupList from "@/components/meetups/MeetupList";
 import { Fragment } from "react";
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 
 // const DUMMY_DATA = [
 //   {
@@ -23,7 +24,13 @@ import { MongoClient } from "mongodb";
 // ];
 
 function HomePage(props) {
-  return <MeetupList meetups={props.meetups} />;
+  return;
+  <Fragment>
+    <Head>
+      <title>Next Meetups</title>
+    </Head>
+    <MeetupList meetups={props.meetups} />
+  </Fragment>;
 }
 export async function getStaticProps() {
   //fetch data from API
@@ -35,7 +42,7 @@ export async function getStaticProps() {
 
   const meetupCollection = db.collection("cities");
 
-  const meetups = await await meetupCollection.find().toArray();
+  const meetups = await meetupCollection.find().toArray();
 
   client.close();
 
