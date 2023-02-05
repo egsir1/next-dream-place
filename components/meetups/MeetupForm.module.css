@@ -1,0 +1,46 @@
+.form {
+  margin: 2rem auto;
+
+  padding: 1rem;
+}
+.control {
+  text-align: center;
+
+  margin-bottom: 0.5rem;
+}
+
+.control label {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.control input,
+.control textarea {
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.actions {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.actions button {
+  background-color: rgb(37, 162, 162);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: rgb(7, 122, 122);
+}

@@ -1,0 +1,34 @@
+.header {
+  background-color: rgb(8, 94, 94);
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+  height: 5rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header li {
+  margin-left: 2rem;
+}
+.header a {
+  color: #eee6e6;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: white;
+}
